@@ -22,24 +22,26 @@
        <div class="col md-12">
         <div class="flex-nowrap">
           <div class="bg-dark col-auto col-md-2 min-vh-100">
-            <a class="d-flex text-decoration-none align-items-center">
+            <a class="d-flex text-decoration-none mt-1 align-items-center text-white">
               <span class="fs-4 d-none d-sm-inline">Side Menu</span>
             </a>
-            <ul class="nav nav-pills flex-column">
+            <ul class="nav nav-pills flex-column mt-4">
               <li class="nav-item">
-                <a href="" class="nav-link active" aria-current="page">Home</a>
+                <a href="" class="nav-link text-white active" aria-current="page">Home
+                  <i class="fs-5 fa fa-guage"></i><span class="fs-4 d-none d-sm-inline"></span>
+                </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link" >hi</a>
+                <a href="" class="nav-link text-white" >hi</a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link">hello</a>
+                <a href="" class="nav-link text-white">hello</a>
               </li>
             </ul>
           </div>
         </div>
        </div>
-       <div class="col md-9"></div>
+       {{-- <div class="col md-9"></div> --}}
      </div>
   </div>
 </body>
