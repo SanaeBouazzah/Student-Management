@@ -25,8 +25,16 @@
             <a class="d-flex text-decoration-none align-items-center">
               <span class="fs-4 d-none d-sm-inline">Side Menu</span>
             </a>
-            <ul class="nav nav-pills flex-columns">
-
+            <ul class="nav nav-pills flex-column">
+              <li class="nav-item">
+                <a href="" class="nav-link active" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link" >hi</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">hello</a>
+              </li>
             </ul>
           </div>
         </div>
