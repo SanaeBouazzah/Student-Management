@@ -20,11 +20,12 @@
     </div>
      <div class="row">
        <div class="col md-12">
-        <div class="flex-wrap">
-          <div class="bg-dark">
+        <div class="flex-nowrap">
+          <div class="bg-dark col-auto col-md-2 min-vh-100">
             <a class="d-flex text-decoration-none align-items-center">
-              <i class="fs-5 fa fa-guage"></i> <span class="fs-4 d-none d-sm-inline"></span>
+              <span class="fs-4 d-none d-sm-inline">Side Menu</span>
             </a>
+            
           </div>
         </div>
        </div>
