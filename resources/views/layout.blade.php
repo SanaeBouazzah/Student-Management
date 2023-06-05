@@ -25,7 +25,9 @@
             <a class="d-flex text-decoration-none align-items-center">
               <span class="fs-4 d-none d-sm-inline">Side Menu</span>
             </a>
-            
+            <ul class="nav nav-pills flex-columns">
+
+            </ul>
           </div>
         </div>
        </div>
