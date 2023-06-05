@@ -22,7 +22,7 @@
      <div class="row">
        <div class="col md-12">
         <div class="flex-nowrap">
-          <div class="bg-dark col-auto col-md-2 lg-3 min-vh-100">
+          <div class="bg-dark col-auto lg-2 min-vh-100">
             <div class="bg-dark  p-2">
             <a class="d-flex text-decoration-none  align-items-center text-white pt-3">
               <span class="fs-4 d-none d-sm-inline">Side Menu</span>
