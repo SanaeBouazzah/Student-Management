@@ -22,9 +22,9 @@
        <div class="col md-12">
         <div class="flex-wrap">
           <div class="bg-dark">
-            <div class="d-flex align-items-center">
+            <a class="d-flex align-items-center">
 
-            </div>
+            </a>
           </div>
         </div>
        </div>
