@@ -22,8 +22,8 @@
        <div class="col md-12">
         <div class="flex-wrap">
           <div class="bg-dark">
-            <a class="d-flex align-items-center">
-
+            <a class="d-flex text-decoration-none align-items-center">
+              <i class="fs-5 fa fa-guage"></i> <span class="fs-4 d-none d-sm-inline"></span>
             </a>
           </div>
         </div>
