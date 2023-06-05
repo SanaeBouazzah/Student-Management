@@ -43,6 +43,11 @@
                   <i class="fs-5 fa fa-table-list"></i><span class="fs-4 d-none d-sm-inline"></span>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="" class="nav-link text-white">Enrollement
+                  <i class="fs-5 fa fa-table-list"></i><span class="fs-4 d-none d-sm-inline"></span>
+                </a>
+              </li>
             </ul>
           </div>
           </div>
