@@ -20,34 +20,33 @@
     </div>
      <div class="row">
        <div class="col md-12">
-        <div class="flex-nowrap">
-          <div class="bg-dark col-auto min-vh-100">
+          <div class="bg-dark col-auto min-vh-100 d-flex flex-column justify-content-between">
             <div class="bg-dark  p-3">
             <a class="d-flex text-decoration-none  align-items-center text-white pt-3">
               <span class="fs-4 d-none d-sm-inline">Side Menu</span>
             </a>
             <ul class="nav nav-pills flex-column mt-4">
-              <li class="nav-item">
+              <li class="nav-item py-2 py-sm-0">
                 <a href="" class="nav-link text-white active" aria-current="page">Home
                   <i class="fs-5 fa fa-guage"></i><span class="fs-4 d-none d-sm-inline"></span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item py-2 py-sm-0">
                 <a href="" class="nav-link text-white">Student
                   <i class="fs-5 fa fa-house"></i><span class="fs-4 d-none d-sm-inline"></span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item py-2 py-sm-0">
                 <a href="" class="nav-link text-white">Teacher
                   <i class="fs-5 fa fa-table-list"></i><span class="fs-4 d-none d-sm-inline"></span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item py-2 py-sm-0">
                 <a href="" class="nav-link text-white">Enrollement
                   <i class="fs-5 fa fa-table-list"></i><span class="fs-4 d-none d-sm-inline"></span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item py-2 py-sm-0">
                 <a href="" class="nav-link text-white">Payment
                   <i class="fs-5 fa fa-table-list"></i><span class="fs-4 d-none d-sm-inline"></span>
                 </a>
@@ -55,7 +54,6 @@
             </ul>
           </div>
           </div>
-        </div>
        </div>
        <div class="col md-9">
         <div class="content">
