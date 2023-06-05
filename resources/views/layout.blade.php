@@ -34,12 +34,12 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link text-white">Home
+                <a href="" class="nav-link text-white">Student
                   <i class="fs-5 fa fa-house"></i><span class="fs-4 d-none d-sm-inline"></span>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="" class="nav-link text-white">Home
+                <a href="" class="nav-link text-white">Teacher
                   <i class="fs-5 fa fa-table-list"></i><span class="fs-4 d-none d-sm-inline"></span>
                 </a>
               </li>
