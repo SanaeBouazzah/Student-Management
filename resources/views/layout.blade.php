@@ -4,7 +4,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
@@ -23,7 +22,7 @@
        <div class="col md-12">
         <div class="flex-nowrap">
           <div class="bg-dark col-auto min-vh-100">
-            <div class="bg-dark  p-2">
+            <div class="bg-dark  p-3">
             <a class="d-flex text-decoration-none  align-items-center text-white pt-3">
               <span class="fs-4 d-none d-sm-inline">Side Menu</span>
             </a>
@@ -45,6 +44,11 @@
               </li>
               <li class="nav-item">
                 <a href="" class="nav-link text-white">Enrollement
+                  <i class="fs-5 fa fa-table-list"></i><span class="fs-4 d-none d-sm-inline"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link text-white">Payment
                   <i class="fs-5 fa fa-table-list"></i><span class="fs-4 d-none d-sm-inline"></span>
                 </a>
               </li>
