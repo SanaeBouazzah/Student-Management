@@ -19,7 +19,15 @@
      </div>
     </div>
      <div class="row">
-       <div class="col md-12"></div>
+       <div class="col md-12">
+        <div class="flex-wrap">
+          <div class="bg-dark">
+            <div class="d-flex align-items-center">
+
+            </div>
+          </div>
+        </div>
+       </div>
      </div>
   </div>
 </body>
