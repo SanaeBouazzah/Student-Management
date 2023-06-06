@@ -10,7 +10,7 @@
 @endif
 </div>
 <a href="{{route('students.create')}}" class="btn btn-dark rounded-0 px-4 my-4">Add Student</a>
-<table class="table table-striped table-hover">
+<table class="table table-striped ">
   <thead>
     <tr>
       <th scope="col">ID</th>
@@ -28,16 +28,16 @@
           <td>{{$student->address}}</td>
           <td>{{$student->mobile}}</td>
           <td class="d-flex justify-content-center align-items-center">
-            <div class="mx-2">
+            <div class="m-2">
               <a href="" class="text-decoration-none py-2 px-4 bg-dark text-white">Show</a>
             </div>
-            <div class="mx-2">
-              <a href="" class="text-decoration-none py-2 px-4 bg-dark text-white">Edit</a>
+            <div class="m-2">
+              <a href="" class="text-decoration-none py-2 px-4 bg-dark text-white ">Edit</a>
             </div>
-            <div class="mx-2">
-              <form action="" method="post" class="mx-2">
+            <div class="m-2">
+              <form action="" method="post" class="m-0">
                   <div>
-                    <input type="submit" value="Delete">
+                    <input type="submit" value="Delete" class="py-2 px-4 bg-primary text-white border-0">
                   </div>
               </form>
             </div>
