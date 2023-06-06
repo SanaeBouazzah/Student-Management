@@ -28,9 +28,10 @@ class StudentController extends Controller
         Student::create($data);
         return redirect()->route('students.index')->with('success', 'You added student successfuly.');
     }
-    public function show()
+    public function show(Student $student)
     {
-        return view('students.show');
+        Student::find($student);
+        return redirect();
     }
 
     /**
