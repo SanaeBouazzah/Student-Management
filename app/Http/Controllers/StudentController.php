@@ -31,7 +31,7 @@ class StudentController extends Controller
     public function show(Student $student)
     {
         Student::find($student);
-        return redirect();
+        return redirect()->route('students.show');
     }
 
     /**
