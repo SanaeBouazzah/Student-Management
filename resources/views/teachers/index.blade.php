@@ -3,13 +3,13 @@
     Home
 @endsection
 @section('content')
-<h3>Student Application </h3>
+<h3>teacher Application </h3>
 <div>
   @if (session()->has('success'))
   {{  session('success')}}
 @endif
 </div>
-<a href="{{route('students.create')}}" class="btn btn-dark rounded-0 px-4 my-4">Add Student</a>
+<a href="{{route('teachers.create')}}" class="btn btn-dark rounded-0 px-4 my-4">Add teacher</a>
 <table class="table table-striped ">
   <thead>
     <tr>
@@ -21,21 +21,21 @@
     </tr>
   </thead>
   <tbody>
-    @foreach ($students as $student)
+    @foreach ($teachers as $teacher)
         <tr>
-          <td>{{$student->id}}</td>
-          <td>{{$student->name}}</td>
-          <td>{{$student->address}}</td>
-          <td>{{$student->mobile}}</td>
+          <td>{{$teacher->id}}</td>
+          <td>{{$teacher->name}}</td>
+          <td>{{$teacher->address}}</td>
+          <td>{{$teacher->mobile}}</td>
           <td class="d-flex justify-content-center align-items-center">
             <div class="m-2">
-              <a href="{{route('students.show', $student)}}" class="text-decoration-none py-2 px-4 bg-dark text-white">Show</a>
+              <a href="{{route('teachers.show', $teacher)}}" class="text-decoration-none py-2 px-4 bg-dark text-white">Show</a>
             </div>
             <div class="m-2">
-              <a href="{{route('students.edit', $student)}}" class="text-decoration-none py-2 px-4 bg-dark text-white ">Edit</a>
+              <a href="{{route('teachers.edit', $teacher)}}" class="text-decoration-none py-2 px-4 bg-dark text-white ">Edit</a>
             </div>
             <div class="m-2">
-              <form action="{{route('students.destroy', $student)}}" method="post" class="m-0">
+              <form action="{{route('teachers.destroy', $teacher)}}" method="post" class="m-0">
                 @csrf
                 @method('delete')
                   <div>
