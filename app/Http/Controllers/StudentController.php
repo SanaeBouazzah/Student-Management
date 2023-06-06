@@ -31,9 +31,7 @@ class StudentController extends Controller
     }
     public function show(Student $student)
     {
-      $students = Student::find($student);
-      return redirect()->route('students.index')
-      // return view('students.show')->with('student',$student);
+      return view('students.show')->with('student',$student);
     }
     public function edit(string $id)
     {
