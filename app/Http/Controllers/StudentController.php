@@ -49,12 +49,9 @@ class StudentController extends Controller
       $student->fill($data)->save($data);
       return redirect()->route('students.index')->with('success', 'You updated student successfuly.');
     }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy(Student $student)
     {
-        //
+        $student->delete();
+        return redirect()->route('students.index')->with('success', 'you have been deleted student successfuly.');
     }
 }
