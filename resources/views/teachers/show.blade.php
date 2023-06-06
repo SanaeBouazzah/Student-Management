@@ -3,14 +3,14 @@
     Show
 @endsection
 @section('content')
-   <h2> {{$student->name}}</h2>
+   <h2> {{$teacher->name}}</h2>
    <div class="card">
     <h5 class="card-header">Profile</h5>
     <div class="card-body">
-      <h5 class="card-title">{{$student->name}}</h5>
-      <p class="card-text">{{$student->address}}</p>
-      <p>{{$student->mobile}}</p>
-      <a href="{{route('students.index')}}" class="btn btn-primary">Back</a>
+      <h5 class="card-title">{{$teacher->name}}</h5>
+      <p class="card-text">{{$teacher->address}}</p>
+      <p>{{$teacher->mobile}}</p>
+      <a href="{{route('teachers.index')}}" class="btn btn-primary">Back</a>
     </div>
   </div>
 @endsection
