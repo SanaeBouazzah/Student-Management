@@ -28,12 +28,12 @@
                </a>
              <ul class="nav nav-pills flex-column mt-4">
               <li class="nav-item py-2 py-sm-0">
-                <a href="{{route('students.index')}}" class="nav-link text-white active" aria-current="page">
+                <a href="{{route('home')}}" class="nav-link text-white active" aria-current="page">
                   <i class="fs-5 fa fa-house"></i><span class="fs-4 ms-3 d-none d-sm-inline">Home</span>
                 </a>
               </li>
               <li class="nav-item py-2 py-sm-0">
-                <a href="" class="nav-link text-white">
+                <a href="{{route('students.index')}}" class="nav-link text-white">
                   <i class="fs-5 fa fa-house"></i><span class="fs-4 ms-3 d-none d-sm-inline">Student</span>
                 </a>
               </li>
