@@ -37,13 +37,17 @@ class StudentController extends Controller
     {
         return view('students.edit')->with('student', $student);
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Student $student)
     {
-        //
+       //validation
+       $data = $request->validate([
+        'name' => 'required',
+        'address' => 'required',
+        'mobile' => 'required'
+      ]);
+      //insertion
+      $request->save($data);
+      return redirect()->route('students.index')->with('success', 'You added student successfuly.');
     }
 
     /**
