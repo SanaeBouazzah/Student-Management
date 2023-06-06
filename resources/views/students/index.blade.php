@@ -27,16 +27,18 @@
           <td>{{$student->name}}</td>
           <td>{{$student->address}}</td>
           <td>{{$student->mobile}}</td>
-          <td class="flex justify-content-center align-items-center">
-            <div>
+          <td class="d-flex justify-content-center align-items-center">
+            <div class="mx-2">
               <a href="">Show</a>
             </div>
-            <div>
+            <div class="mx-2">
               <a href="">Edit</a>
             </div>
-            <form action="" method="post">
-              <input type="submit" value="Delete">
-            </form>
+            <div class="mx-2">
+              <form action="" method="post" class="mx-2">
+                <input type="submit" value="Delete">
+              </form>
+            </div>
           </td>
         </tr>
     @endforeach
