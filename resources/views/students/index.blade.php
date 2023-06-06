@@ -35,7 +35,8 @@
               <a href="{{route('students.edit', $student)}}" class="text-decoration-none py-2 px-4 bg-dark text-white ">Edit</a>
             </div>
             <div class="m-2">
-              <form action="" method="post" class="m-0">
+              <form action="{{route('students.destroy', $student)}}" method="post" class="m-0">
+                @method('delete')
                   <div>
                     <input type="submit" value="Delete" class="py-2 px-4 bg-primary text-white border-0">
                   </div>
