@@ -2,32 +2,31 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Student;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        $students = Student::all();
+        return view('students.index', compact('students'));
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        //
+        return view('students.create');
     }
-
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+       //validation
+        $data = $request->validate([
+          'name' => 'required',
+          'address' => 'required',
+          'mobile' => 'required'
+        ]);
+        //insertion
+        Student::create($data);
+        return redirect()->route('students.index')->with('success', 'You added student successfuly.');
     }
 
     /**
