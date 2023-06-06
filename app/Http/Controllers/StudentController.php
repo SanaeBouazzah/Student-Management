@@ -28,13 +28,9 @@ class StudentController extends Controller
         Student::create($data);
         return redirect()->route('students.index')->with('success', 'You added student successfuly.');
     }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function show()
     {
-        //
+        return view('students.show');
     }
 
     /**
