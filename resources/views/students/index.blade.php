@@ -36,6 +36,7 @@
             </div>
             <div class="m-2">
               <form action="{{route('students.destroy', $student)}}" method="post" class="m-0">
+                @csrf
                 @method('delete')
                   <div>
                     <input type="submit" value="Delete" class="py-2 px-4 bg-primary text-white border-0">
