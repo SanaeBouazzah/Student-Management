@@ -3,5 +3,6 @@
     Show
 @endsection
 @section('content')
-   
+   {{$student->name}}
+   hi
 @endsection

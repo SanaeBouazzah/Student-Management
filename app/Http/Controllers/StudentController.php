@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Student;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\View;
 
 class StudentController extends Controller
 {
@@ -30,13 +31,7 @@ class StudentController extends Controller
     }
     public function show(Student $student)
     {
-        Student::find($student);
-        return redirect()->route('students.show');
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(string $id)
     {
         //
