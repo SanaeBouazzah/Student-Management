@@ -29,7 +29,7 @@
           <td>{{$student->mobile}}</td>
           <td class="d-flex justify-content-center align-items-center">
             <div class="m-2">
-              <a href="" class="text-decoration-none py-2 px-4 bg-dark text-white">Show</a>
+              <a href="{{route('students.show')}}" class="text-decoration-none py-2 px-4 bg-dark text-white">Show</a>
             </div>
             <div class="m-2">
               <a href="" class="text-decoration-none py-2 px-4 bg-dark text-white ">Edit</a>
