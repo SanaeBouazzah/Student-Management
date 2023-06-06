@@ -3,5 +3,5 @@
     Show
 @endsection
 @section('content')
-
+   
 @endsection
