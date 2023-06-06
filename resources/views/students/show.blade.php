@@ -10,7 +10,7 @@
       <h5 class="card-title">{{$student->name}}</h5>
       <p class="card-text">{{$student->address}}</p>
       <p>{{$student->mobile}}</p>
-      <a href="" class="btn btn-primary">Back</a>
+      <a href="{{route('students.index')}}" class="btn btn-primary">Back</a>
     </div>
   </div>
 @endsection
