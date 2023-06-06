@@ -5,8 +5,9 @@
 @section('content')
 <div class="mt-4">
   <h2 class="mb-4">Edit a Student :</h2>
-<form style="width:80%; margin:auto;" class="px-4 py-5 shadow-lg" action="{{route('students.store')}}" method="POST">
+<form style="width:80%; margin:auto;" class="px-4 py-5 shadow-lg" action="{{route('students.update')}}" method="POST">
   @csrf
+  @method('PUT')
   <div class="form-group my-3 mx-5">
     <label for="name" class="mb-2">Name</label>
     <input type="name" class="form-control" id="name" name="name" placeholder="Enter your name" value="{{$student->name}}">
