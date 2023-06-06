@@ -1,5 +1,7 @@
 @extends('layouts.layout')
 @section('title')
-    Home
+    Show
 @endsection
 @section('content')
+
+@endsection

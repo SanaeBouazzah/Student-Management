@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('title')
-    Home
+    Create
 @endsection
 @section('content')
 <div class="mt-4">
