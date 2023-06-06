@@ -33,7 +33,7 @@ class StudentController extends Controller
     {
       return view('students.show')->with('student',$student);
     }
-    public function edit()
+    public function edit(Student $student)
     {
         return view('students.edit')->with('student', $student);
     }
