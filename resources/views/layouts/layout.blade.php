@@ -21,7 +21,7 @@
     </div>
      <div class="row">
        <div class="col md-3">
-          <div class="bg-dark col-auto min-vh-100 d-flex flex-column justify-content-between">
+          <div class="bg-dark min-vh-100 d-flex flex-column justify-content-between">
             <div class="bg-dark  p-3">
                <a class="d-flex text-decoration-none  align-items-center text-white pt-3">
               <span class="fs-4 d-none d-sm-inline">Side Menu</span>
