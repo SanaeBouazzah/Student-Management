@@ -29,14 +29,16 @@
           <td>{{$student->mobile}}</td>
           <td class="d-flex justify-content-center align-items-center">
             <div class="mx-2">
-              <a href="">Show</a>
+              <a href="" class="text-decoration-none py-2 px-4 bg-dark text-white">Show</a>
             </div>
             <div class="mx-2">
-              <a href="">Edit</a>
+              <a href="" class="text-decoration-none py-2 px-4 bg-dark text-white">Edit</a>
             </div>
             <div class="mx-2">
               <form action="" method="post" class="mx-2">
-                <input type="submit" value="Delete">
+                  <div>
+                    <input type="submit" value="Delete">
+                  </div>
               </form>
             </div>
           </td>
