@@ -38,7 +38,7 @@
                 </a>
               </li>
               <li class="nav-item py-2 py-sm-0">
-                <a href="" class="nav-link text-white">
+                <a href="{{route('teachers.index')}}" class="nav-link text-white">
                   <i class="fs-5 fa fa-table-list"></i><span class="fs-4 ms-3 d-none d-sm-inline">Teacher</span>
                 </a>
               </li>
