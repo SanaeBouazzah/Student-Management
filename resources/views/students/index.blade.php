@@ -17,6 +17,7 @@
       <th scope="col">Name</th>
       <th scope="col">Address</th>
       <th scope="col">Mobile</th>
+      <th scope="col">Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -26,6 +27,17 @@
           <td>{{$student->name}}</td>
           <td>{{$student->address}}</td>
           <td>{{$student->mobile}}</td>
+          <td class="flex justify-content-center align-items-center">
+            <div>
+              <a href="">Show</a>
+            </div>
+            <div>
+              <a href="">Edit</a>
+            </div>
+            <form action="" method="post">
+              <input type="submit" value="Delete">
+            </form>
+          </td>
         </tr>
     @endforeach
   </tbody>
