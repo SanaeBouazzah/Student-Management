@@ -33,9 +33,9 @@ class StudentController extends Controller
     {
       return view('students.show')->with('student',$student);
     }
-    public function edit(string $id)
+    public function edit()
     {
-        //
+        return view('students.edit')->with('student', $student);
     }
 
     /**

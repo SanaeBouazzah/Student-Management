@@ -32,7 +32,7 @@
               <a href="{{route('students.show', $student)}}" class="text-decoration-none py-2 px-4 bg-dark text-white">Show</a>
             </div>
             <div class="m-2">
-              <a href="{{route('students.edit')}}" class="text-decoration-none py-2 px-4 bg-dark text-white ">Edit</a>
+              <a href="{{route('students.edit', $student)}}" class="text-decoration-none py-2 px-4 bg-dark text-white ">Edit</a>
             </div>
             <div class="m-2">
               <form action="" method="post" class="m-0">
