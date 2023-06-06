@@ -4,8 +4,8 @@
 @endsection
 @section('content')
 <div class="mt-4">
-  <h2 class="mb-4">Add a Student :</h2>
-<form style="width:80%; margin:auto;" class="px-4 py-5 shadow-lg" action="{{route('students.store')}}" method="POST">
+  <h2 class="mb-4">Add a teacher :</h2>
+<form style="width:80%; margin:auto;" class="px-4 py-5 shadow-lg" action="{{route('teachers.store')}}" method="POST">
   @csrf
   <div class="form-group my-3 mx-5">
     <label for="name" class="mb-2">Name</label>
@@ -23,6 +23,6 @@
     <input type="submit" class="btn btn-primary form-control " value="submit">
   </div>
 </form>
-<a href="{{route('students.index')}}" class="btn btn-dark rounded-0 px-4 my-4">Back</a>
+<a href="{{route('teachers.index')}}" class="btn btn-dark rounded-0 px-4 my-4">Back</a>
 </div>
 @endsection
