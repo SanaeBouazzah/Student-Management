@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Enrollment;
+use App\Models\Payment;
 
 class PaymentController extends Controller
 {
@@ -11,10 +12,6 @@ class PaymentController extends Controller
     {
         //
     }
-
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         //
