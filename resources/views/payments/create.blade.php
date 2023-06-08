@@ -4,7 +4,7 @@
 @endsection
 @section('content')
 <div class="mt-4">
-  <h2 class="mb-4">Add a Student :</h2>
+  <h2 class="mb-4">Add a Payment :</h2>
 <form style="width:80%; margin:auto;" class="px-4 py-5 shadow-lg" action="{{route('students.store')}}" method="POST">
   @csrf
   <div class="form-group my-3 mx-5">
