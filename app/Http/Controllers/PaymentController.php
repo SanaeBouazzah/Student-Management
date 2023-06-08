@@ -43,7 +43,7 @@ class PaymentController extends Controller
         'paid_date' => 'amount',
       ]);
       $payment->fill($data)->save();
-      return redirect();
+      return redirect()->route('payments.index')->with('sucess', 'you updated payment successfully.');
     }
 
     /**
