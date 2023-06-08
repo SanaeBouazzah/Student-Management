@@ -16,7 +16,7 @@
     </select>
   </div>
   <div class="form-group my-3 mx-5">
-    <label for="name" class="mb-2">Enrollmetn No</label>
+    <label for="name" class="mb-2">Paid Date</label>
     <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
   </div>
   <div class="form-group my-3 mx-5">
