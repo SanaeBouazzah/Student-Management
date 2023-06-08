@@ -15,4 +15,7 @@ class Payment extends Model
     'amount',
   ];
     use HasFactory;
+  public function enrollment(){
+    
+  }
 }
