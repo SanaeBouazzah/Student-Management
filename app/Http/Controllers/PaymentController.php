@@ -24,6 +24,8 @@ class PaymentController extends Controller
           'paid_date' => 'required',
           'paid_date' => 'amount',
         ]);
+        Payment::create($data);
+        return redirect()
     }
     public function show(string $id)
     {
