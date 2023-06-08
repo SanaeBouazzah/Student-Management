@@ -15,7 +15,7 @@ class PaymentController extends Controller
     }
     public function create()
     {
-        //
+        return view('paymetns.create');
     }
     public function store(Request $request)
     {
