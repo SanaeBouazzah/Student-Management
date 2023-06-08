@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
+            $table->string('enrollment_id');
+            $table->unsignedBigInteger('paid_date');
+            $table->double('amount');
             $table->timestamps();
         });
     }
