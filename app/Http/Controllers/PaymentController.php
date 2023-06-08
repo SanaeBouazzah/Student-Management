@@ -37,7 +37,11 @@ class PaymentController extends Controller
     }
     public function update(Request $request, Payment $payment)
     {
-        //
+      $data = $request->validate([
+        'enrollment_id' => 'required',
+        'paid_date' => 'required',
+        'paid_date' => 'amount',
+      ]);
     }
 
     /**
