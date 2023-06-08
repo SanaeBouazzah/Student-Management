@@ -42,6 +42,8 @@ class PaymentController extends Controller
         'paid_date' => 'required',
         'paid_date' => 'amount',
       ]);
+      $payment->fill($data)->save();
+      return redirect();
     }
 
     /**
