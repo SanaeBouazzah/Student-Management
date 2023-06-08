@@ -27,22 +27,14 @@ class PaymentController extends Controller
         Payment::create($data);
         return redirect()->route('payments.index')->with('success', 'you added payment successfully.');
     }
-    public function show(string $id)
+    public function show(Payment $payment)
     {
-        //
+        return view('payments.show')->with('payment', $payment);
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function edit(Payment $payment)
     {
-        //
+        return view('payments.edit')->with('payment', $payment);
     }
-
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
         //
