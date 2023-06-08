@@ -45,12 +45,9 @@ class PaymentController extends Controller
       $payment->fill($data)->save();
       return redirect()->route('payments.index')->with('sucess', 'you updated payment successfully.');
     }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
+    public function destroy(Payment $payment)
     {
-        //
+        $payment->delete();
+        return redirect()->route('payments.index')->with('success', 'you deleted payment successfully.');
     }
 }
