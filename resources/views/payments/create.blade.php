@@ -9,7 +9,7 @@
   @csrf
   <div class="form-group my-3 mx-5">
     <label for="enrollment_id" class="mb-2">Enrollment No</label><br/>
-    <select name="course_id" id="course_id" class="form-select" aria-label="Default select example">
+    <select name="Student-Management" id="Student-Management" class="form-select" aria-label="Default select example">
       @foreach ($courses as $id => $name)
         <option value="{{$id}}">{{$name}}</option>
       @endforeach
