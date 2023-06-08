@@ -8,6 +8,15 @@
 <form style="width:80%; margin:auto;" class="px-4 py-5 shadow-lg" action="{{route('students.store')}}" method="POST">
   @csrf
   <div class="form-group my-3 mx-5">
+    <label for="course_id" class="mb-2">Course</label><br/>
+    {{-- <input type="text" class="form-control" id="course_id" name="course_id" placeholder="Enter Course name"> --}}
+    <select name="course_id" id="course_id" class="form-select" aria-label="Default select example">
+      @foreach ($courses as $id => $name)
+        <option value="{{$id}}">{{$name}}</option>
+      @endforeach
+    </select>
+  </div>
+  <div class="form-group my-3 mx-5">
     <label for="name" class="mb-2">Enrollmetn No</label>
     <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
   </div>
