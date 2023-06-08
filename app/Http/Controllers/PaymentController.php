@@ -19,7 +19,9 @@ class PaymentController extends Controller
     }
     public function store(Request $request)
     {
-        //
+        $data = $request->validate([
+          
+        ]);
     }
     public function show(string $id)
     {
