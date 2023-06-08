@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Payment extends Model
 {
   protected $fillable =[
-    'enroll_no',
+    'enrollment_id',
   ];
     use HasFactory;
 }
