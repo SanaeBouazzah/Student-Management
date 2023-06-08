@@ -46,7 +46,7 @@ class teacherController extends Controller
         'mobile' => 'required'
       ]);
       //insertion
-      $teacher->fill($data)->save($data);
+      $teacher->fill($data)->save();
       return redirect()->route('teachers.index')->with('success', 'You updated teacher successfuly.');
     }
     public function destroy(Teacher $teacher)

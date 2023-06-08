@@ -10,14 +10,14 @@
 @endif
 </div>
 <a href="{{route('students.create')}}" class="btn btn-dark rounded-0 px-4 my-4">Add Student</a>
-<table class="table table-striped ">
+<table class="table table-striped">
   <thead>
     <tr>
       <th scope="col">ID</th>
       <th scope="col">Name</th>
       <th scope="col">Address</th>
       <th scope="col">Mobile</th>
-      <th scope="col">Actions</th>
+      <th scope="col" class="text-center">Actions</th>
     </tr>
   </thead>
   <tbody>

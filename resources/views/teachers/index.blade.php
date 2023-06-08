@@ -3,13 +3,13 @@
     Home
 @endsection
 @section('content')
-<h3>teacher Application </h3>
+<h3>Teacher Application </h3>
 <div>
   @if (session()->has('success'))
   {{  session('success')}}
 @endif
 </div>
-<a href="{{route('teachers.create')}}" class="btn btn-dark rounded-0 px-4 my-4">Add teacher</a>
+<a href="{{route('teachers.create')}}" class="btn btn-dark rounded-0 px-4 my-4">Add Teacher</a>
 <table class="table table-striped ">
   <thead>
     <tr>
@@ -17,7 +17,7 @@
       <th scope="col">Name</th>
       <th scope="col">Address</th>
       <th scope="col">Mobile</th>
-      <th scope="col">Actions</th>
+      <th scope="col" class="text-center">Actions</th>
     </tr>
   </thead>
   <tbody>

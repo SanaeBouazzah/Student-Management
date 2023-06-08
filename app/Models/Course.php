@@ -5,15 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Teacher extends Model
+class Course extends Model
 {
-
-  protected $table = 'teachers';
+  protected $table = 'Courses';
   protected $primarykey = 'id';
   protected $fillable = [
     'name',
-    'address',
-    'mobile',
+    'syllabus',
+    'duration',
   ];
     use HasFactory;
+
+    public function duration(){
+      return $this->duration. ' Months';
+    }
 }

@@ -46,7 +46,7 @@ class StudentController extends Controller
         'mobile' => 'required'
       ]);
       //insertion
-      $student->fill($data)->save($data);
+      $student->fill($data)->save();
       return redirect()->route('students.index')->with('success', 'You updated student successfuly.');
     }
     public function destroy(Student $student)
