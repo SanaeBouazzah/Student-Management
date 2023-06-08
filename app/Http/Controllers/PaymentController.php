@@ -25,7 +25,7 @@ class PaymentController extends Controller
           'paid_date' => 'amount',
         ]);
         Payment::create($data);
-        return redirect()->route();
+        return redirect()->route('payments.index')->with('success', 'you added payment successfully.');
     }
     public function show(string $id)
     {
