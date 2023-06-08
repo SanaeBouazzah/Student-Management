@@ -35,7 +35,7 @@ class PaymentController extends Controller
     {
         return view('payments.edit')->with('payment', $payment);
     }
-    public function update(Request $request, string $id)
+    public function update(Request $request, Payment $payment)
     {
         //
     }
