@@ -21,7 +21,7 @@ class PaymentController extends Controller
     public function store(Request $request)
     {
         $data = $request->validate([
-          'enrollment_id' => 'required',
+          'enroll_no' => 'required',
           'paid_date' => 'required',
           'amount' => 'required',
         ]);
