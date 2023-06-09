@@ -42,7 +42,7 @@ class PaymentController extends Controller
       $data = $request->validate([
         'enrollment_id' => 'required',
         'paid_date' => 'required',
-        'paid_date' => 'amount',
+        'amount' => 'required',
       ]);
       $payment->fill($data)->save();
       return redirect()->route('payments.index')->with('sucess', 'you updated payment successfully.');
