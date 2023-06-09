@@ -12,8 +12,12 @@
         <input type="text" class="form-control" id="name" name="name" placeholder="Enter name the batche" value="{{$batch->name}}">
       </div>
       <div class="form-group my-3 mx-5">
-        <label for="course_id" class="mb-2">Course Name</label>
-        <input type="text" class="form-control" id="course_id" name="course_id" placeholder="Enter course_id" value="{{$batch->course->name}}">
+        <label for="course_id" class="mb-2">Course</label><br/>
+        <select name="course_id" id="course_id" class="form-select" aria-label="Default select example">
+          @foreach ($courses as $id => $name)
+            <option value="{{$id}}">{{$name}}</option>
+          @endforeach
+        </select>
       </div>
       <div class="form-group mx-5 my-3">
         <label for="start_date" class="mb-2">Start Date</label>
