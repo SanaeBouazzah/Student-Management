@@ -11,7 +11,7 @@ class Payment extends Model
   protected $primarykey = 'id';
   protected $fillable =[
     'enrollment_id',
-    'paid_data',
+    'paid_date',
     'amount',
   ];
     use HasFactory;
