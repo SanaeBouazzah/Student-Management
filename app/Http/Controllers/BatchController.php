@@ -34,7 +34,8 @@ class batchController extends Controller
     }
     public function edit(batch $batch)
     {
-        return view('batches.edit')->with('batch', $batch);
+      $courses = Course::pluck('name', 'id');
+        return view('batches.edit', compact('courses'))->with('batch', $batch);
     }
     public function update(Request $request, batch $batch)
     {

@@ -8,7 +8,7 @@
       @csrf
       @method('PUT')
       <div class="form-group my-3 mx-5">
-        <label for="name" class="mb-2">Name batche</label>
+        <label for="name" class="mb-2">Name batch</label>
         <input type="text" class="form-control" id="name" name="name" placeholder="Enter name the batche" value="{{$batch->name}}">
       </div>
       <div class="form-group my-3 mx-5">
