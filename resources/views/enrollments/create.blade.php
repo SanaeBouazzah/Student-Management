@@ -11,11 +11,16 @@
         <input type="text" class="form-control" id="enroll_no" name="enroll_no" placeholder="Enter the enroll_no">
       </div>
       <div class="form-group my-3 mx-5">
-        <label for="batch_id" class="mb-2">batch_id</label>
+        <label for="batch_id" class="mb-2">Name Batch</label>
         {{-- <input type="text" class="form-control" id="batch_id" name="batch_id" placeholder="Enter batch_id"> --}}
+        <select name="batch_id" id="batch_id" class="form-select" aria-label="Default select example">
+          @foreach ($batches as $id => $name)
+            <option value="{{$id}}">{{$name}}</option>
+          @endforeach
+        </select>
       </div>
       <div class="form-group my-3 mx-5">
-        <label for="student_id" class="mb-2">student_id</label>
+        <label for="student_id" class="mb-2">Name Student</label>
         <select name="student_id" id="student_id" class="form-select" aria-label="Default select example">
           @foreach ($students as $id => $name)
             <option value="{{$id}}">{{$name}}</option>
