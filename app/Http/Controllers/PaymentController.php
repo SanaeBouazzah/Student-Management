@@ -45,7 +45,7 @@ class PaymentController extends Controller
         'amount' => 'required',
       ]);
       $payment->fill($data)->save();
-      return redirect()->route('payments.index')->with('sucess', 'you updated payment successfully.');
+      return redirect()->route('payments.index')->with('success', 'you updated payment successfully.');
     }
     public function destroy(Payment $payment)
     {
