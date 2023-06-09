@@ -12,13 +12,20 @@
         <input type="text" class="form-control" id="enroll_no" name="enroll_no" placeholder="Enter the enroll_no" value="{{$enrollment->enroll_no}}">
       </div>
       <div class="form-group my-3 mx-5">
-        <label for="batch_id" class="mb-2">batch_id</label>
-        <input type="text" class="form-control" id="batch_id" name="batch_id" placeholder="Enter batch_id" value="{{$enrollment->batch->name}}">
+        <label for="batch_id" class="mb-2">Name Batch</label>
+        <select name="batch_id" id="batch_id" class="form-select" aria-label="Default select example">
+          @foreach ($batches as $id => $name)
+            <option value="{{$id}}">{{$name}}</option>
+          @endforeach
+        </select>
       </div>
       <div class="form-group my-3 mx-5">
-        <label for="student_id" class="mb-2">student_id</label>
-        <input type="text" class="form-control" id="student_id" name="student_id" 
-        placeholder="Enter student_id" value="{{$enrollment->student->name}}">
+        <label for="student_id" class="mb-2">Name Student</label>
+        <select name="student_id" id="student_id" class="form-select" aria-label="Default select example">
+          @foreach ($students as $id => $name)
+            <option value="{{$id}}">{{$name}}</option>
+          @endforeach
+        </select>
       </div>
       <div class="form-group my-3 mx-5">
         <label for="join_date" class="mb-2">join_date</label>
