@@ -33,8 +33,9 @@ class PaymentController extends Controller
         return view('payments.show')->with('payment', $payment);
     }
     public function edit(Payment $payment)
-    {
-        return view('payments.edit')->with('payment', $payment);
+    {  
+      $enrollments = Enrollment::pluck('enroll_no', 'id');
+        return view('payments.edit', compact('enrollments'))->with('payment', $payment);
     }
     public function update(Request $request, Payment $payment)
     {
