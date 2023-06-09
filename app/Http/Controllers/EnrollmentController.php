@@ -39,7 +39,9 @@ class EnrollmentController extends Controller
     }
     public function edit(Enrollment $enrollment)
     {
-        return view('enrollments.edit')->with('enrollment', $enrollment);
+      $students = Student::pluck('name', 'id');
+      $batches = Batch::pluck('name', 'id');
+      return view('enrollments.edit', compact('students', 'batches'))->with('enrollment', $enrollment);
     }
     public function update(Request $request, Enrollment $enrollment)
     {
@@ -56,6 +58,6 @@ class EnrollmentController extends Controller
     public function destroy(Enrollment $enrollment)
     {
       $enrollment->delete();
-      return redirect()->route('enrollments.index')->with('sucess', 'you have been deleted enrollment successfully.');
+      return redirect()->route('enrollments.index')->with('success', 'you have been deleted enrollment successfully.');
     }
 }
