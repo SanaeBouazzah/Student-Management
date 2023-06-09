@@ -3,7 +3,7 @@
     Home
 @endsection
 @section('content')
-<h3>payment Application </h3>
+<h3>Payment Application </h3>
 <div>
   @if (session()->has('success'))
   {{  session('success')}}

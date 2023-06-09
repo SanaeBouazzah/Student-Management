@@ -3,6 +3,7 @@
     Batch
 @endsection
 @section('content')
+<h3>Batch Application </h3>
     <div>
       @if (session()->has('success'))
           {{session('success')}}

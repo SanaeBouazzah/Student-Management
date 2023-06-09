@@ -3,6 +3,7 @@
     Enrollment
 @endsection
 @section('content')
+<h3>Enrollment Application </h3>
     <div>
       @if (session()->has('success'))
           {{session('success')}}
