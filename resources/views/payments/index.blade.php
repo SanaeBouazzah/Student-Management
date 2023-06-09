@@ -24,7 +24,6 @@
     @foreach ($payments as $payment)
         <tr>
           <td>{{$payment->id}}</td>
-          <td>{{$payment->name}}</td>
           <td>{{$payment->enrollment->enroll_no}}</td>
           <td>{{$payment->paid_date}}</td>
           <td>{{$payment->amount}}</td>
