@@ -8,8 +8,8 @@
 <form style="width:80%; margin:auto;" class="px-4 py-5 shadow-lg" action="{{route('payments.store')}}" method="POST">
   @csrf
   <div class="form-group my-3 mx-5">
-    <label for="enrollment_id" class="mb-2">Enrollment No</label><br/>
-    <select name="enrollment_id" id="enrollment_id" class="form-select" aria-label="Default select example">
+    <label for="enroll_no" class="mb-2">Enrollment No</label><br/>
+    <select name="enroll_no" id="enroll_no" class="form-select" aria-label="Default select example">
       @foreach ($enrollments as $id => $enroll_no)
         <option value="{{$id}}">{{$enroll_no}}</option>
       @endforeach
