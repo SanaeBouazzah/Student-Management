@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Enrollment;
 use Illuminate\Http\Request;
 
+
 class EnrollmentController extends Controller
 {
     public function index()
@@ -14,7 +15,8 @@ class EnrollmentController extends Controller
     }
     public function create()
     {
-        return view('enrollments.create');
+      $students = Student::pluck('name', 'id');
+        return view('enrollments.create', compact('students'));
     }
     public function store(Request $request)
     {
