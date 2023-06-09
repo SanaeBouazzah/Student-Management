@@ -46,12 +46,12 @@
               </li>
               <li class="nav-item py-2 py-sm-0">
                 <a href="{{route('batches.index')}}" id="link" class="nav-link text-white">
-                  <i class="fs-5 fa fa-table-list"></i><span class="fs-4 ms-3 d-none d-sm-inline">Batches</span>
+                  <i class="fs-5 fa fa-file-invoice"></i><span class="fs-4 ms-3 d-none d-sm-inline">Batches</span>
                 </a>
               </li>
               <li class="nav-item py-2 py-sm-0">
                 <a href="{{route('enrollments.index')}}" class="nav-link text-white" id="link">
-                  <i class="fs-5 fa fa-bag-shopping"></i><span class="fs-4 ms-3 d-none d-sm-inline">Enrollement</span>
+                  <i class="fs-5 fa fa-bag-shopping"></i><span class="fs-4 ms-3 d-none d-sm-inline">Enrollements</span>
                 </a>
               </li>
               <li class="nav-item py-2 py-sm-0">

@@ -12,7 +12,6 @@
       </div>
       <div class="form-group my-3 mx-5">
         <label for="course_id" class="mb-2">Course</label><br/>
-        {{-- <input type="text" class="form-control" id="course_id" name="course_id" placeholder="Enter Course name"> --}}
         <select name="course_id" id="course_id" class="form-select" aria-label="Default select example">
           @foreach ($courses as $id => $name)
             <option value="{{$id}}">{{$name}}</option>

@@ -15,14 +15,15 @@ class PaymentController extends Controller
     }
     public function create()
     {
-        return view('payments.create');
+      $enrollments = Enrollment::pluck('enroll_no', 'id');
+        return view('payments.create', compact('enrollments'));
     }
     public function store(Request $request)
     {
         $data = $request->validate([
           'enrollment_id' => 'required',
           'paid_date' => 'required',
-          'paid_date' => 'amount',
+          'amount' => 'required',
         ]);
         Payment::create($data);
         return redirect()->route('payments.index')->with('success', 'you added payment successfully.');

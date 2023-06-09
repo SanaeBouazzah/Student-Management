@@ -14,9 +14,9 @@
   <thead>
     <tr>
       <th scope="col">ID</th>
-      <th scope="col">Name</th>
-      <th scope="col">Address</th>
-      <th scope="col">Mobile</th>
+      <th scope="col">Enrollment No</th>
+      <th scope="col">Paid Date</th>
+      <th scope="col">Amount</th>
       <th scope="col" class="text-center">Actions</th>
     </tr>
   </thead>
@@ -25,8 +25,9 @@
         <tr>
           <td>{{$payment->id}}</td>
           <td>{{$payment->name}}</td>
-          <td>{{$payment->address}}</td>
-          <td>{{$payment->mobile}}</td>
+          <td>{{$payment->enrollment->enroll_no}}</td>
+          <td>{{$payment->paid_date}}</td>
+          <td>{{$payment->amount}}</td>
           <td class="d-flex justify-content-center align-items-center">
             <div class="m-2">
               <a href="{{route('payments.show', $payment)}}" class="text-decoration-none py-2 px-4 bg-dark text-white">Show</a>

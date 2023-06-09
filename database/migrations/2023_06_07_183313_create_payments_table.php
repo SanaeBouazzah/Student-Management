@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('enrollment_id');
-            $table->unsignedBigInteger('paid_date');
+            $table->unsignedBigInteger('enrollment_id');
+            $table->date('paid_date');
             $table->double('amount');
+            $table->foreign('enrollment_id')->references('id')->on('enrollments')->onDelete('cascade');
             $table->timestamps();
         });
     }
