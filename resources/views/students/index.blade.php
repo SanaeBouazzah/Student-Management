@@ -49,5 +49,5 @@
   </tbody>
 </table>
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolore minus esse enim! </p>
-<button></button>
+<button type=""></button>
 @endsection
