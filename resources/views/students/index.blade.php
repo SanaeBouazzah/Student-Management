@@ -48,4 +48,5 @@
     @endforeach
   </tbody>
 </table>
+<p>lorem </p>
 @endsection
