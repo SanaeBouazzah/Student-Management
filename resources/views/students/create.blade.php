@@ -22,10 +22,6 @@
   <div class="mx-5 my-4">
     <input type="submit" class="btn btn-primary form-control " value="submit">
   </div>
-  <div class="form-group mx-5 my-3">
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" class="form-control">
-  </div>
 </form>
 <a href="{{route('students.index')}}" class="btn btn-dark rounded-0 px-4 my-4">Back</a>
 </div>
