@@ -48,6 +48,4 @@
     @endforeach
   </tbody>
 </table>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolore minus esse enim! </p>
-<button type="button">Show</button>
 @endsection
