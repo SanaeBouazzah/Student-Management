@@ -48,5 +48,6 @@
     @endforeach
   </tbody>
 </table>
-<p>lorem </p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolore minus esse enim! </p>
+
 @endsection
