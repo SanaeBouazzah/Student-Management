@@ -24,6 +24,7 @@
   </div>
   <div class="form-group mx-5 my-3">
     <label for="password">Password:</label>
+    <input type="text">
   </div>
 </form>
 <a href="{{route('students.index')}}" class="btn btn-dark rounded-0 px-4 my-4">Back</a>
