@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="{{asset('css/style.css')}}">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
   <div class="container-fluid">
@@ -24,7 +26,7 @@
        <div style="width:20%;">
           <div class="bg-dark min-vh-100 d-flex flex-column justify-content-between p-3">
              <ul class="nav nav-pills flex-column mt-4">
-              <li class="nav-item py-2 py-sm-0">
+              <li class="nav-item py-2 py-sm-0 ">
                 <a href="{{route('home')}}" id="link" class="nav-link text-white">
                   <i class="fs-5 fa fa-house"></i><span class="fs-4 ms-3 d-none d-sm-inline">Home</span>
                 </a>
@@ -68,12 +70,5 @@
         </div>
        </div>
      </div>
-  </div>
-  {{-- <script>
-    var btn = document.getElemenetById('link');
-    btn.addEventListener("click", () => {
-      btn.classList.remove("active");
-    });
-  </script> --}}
 </body>
 </html>
