@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('title')
-    Home
+    Students
 @endsection
 @section('content')
 <h3>Student Application </h3>
