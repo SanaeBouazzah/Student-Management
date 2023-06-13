@@ -6,9 +6,9 @@
 <div class="row">
   <div class="row">
     <div class="col">
-      <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+      <nav aria-label="breadcrumb" class=" rounded-3 p-3 ">
         <ol class="breadcrumb mb-0">
-          <li class="breadcrumb-item"><a href="{{route('')}}">Home</a></li>
+          <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
           <li class="breadcrumb-item active" aria-current="page">User Profile</li>
         </ol>
       </nav>
