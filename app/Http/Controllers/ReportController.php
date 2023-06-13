@@ -17,7 +17,7 @@ class ReportController extends Controller
     $print .= "<hr/>";
     $print .= "<p>Receipt No: <b>" . $pid . "</b> </p>";
     $print .= "<p>Date: <b>" . $payment->paid_date . "</b> </p>";
-    $print .= "<p>Enrollment No: <b>" . $payment->paid_date . "</b> </p>";
+    $print .= "<p>Enrollment No: <b>" . $payment->enrollment->enroll_no . "</b> </p>";
 
     $print .= "<table>";
 
