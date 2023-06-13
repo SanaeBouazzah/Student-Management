@@ -9,6 +9,7 @@
       <nav aria-label="breadcrumb" class=" rounded-3 p-3 ">
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item"><a href="{{route('home')}}">Home</a></li>
+          <li class="breadcrumb-item"><a href="{{route('students.index')}}">Students</a></li>
           <li class="breadcrumb-item active" aria-current="page">User Profile</li>
         </ol>
       </nav>
