@@ -26,9 +26,7 @@ class StudentController extends Controller
           'mobile' => 'required',
           'image' => 'required|image|mimes:jpg, png, jpeg, svg',
         ]);
-        if($request->hasFile('image')){
-          $data['image'] = $request->file('image')->store('images', 'public');
-        }
+         $data['image'] = $this->uploadImage($request);
         //insertion
         Student::create($data);
         return redirect()->route('students.index')->with('success', 'You added student successfuly.');
@@ -57,5 +55,10 @@ class StudentController extends Controller
     {
         $student->delete();
         return redirect()->route('students.index')->with('success', 'you have been deleted student successfuly.');
+    }
+    public function uploadImage(Request $request){
+      if($request->hasFile('image')){
+        $data['image'] = $request->file('image')->store('images', 'public');
+      }
     }
 }
