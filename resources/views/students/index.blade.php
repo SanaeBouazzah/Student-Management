@@ -14,6 +14,7 @@
   <thead>
     <tr>
       <th scope="col">ID</th>
+      <th scope="col">Image</th>
       <th scope="col">Name</th>
       <th scope="col">Address</th>
       <th scope="col">Mobile</th>
