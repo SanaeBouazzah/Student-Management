@@ -10,6 +10,7 @@ class Student extends Model
   protected $table = 'students';
   protected $primarykey = 'id';
   protected $fillable = [
+    'image',
     'name',
     'address',
     'mobile',
