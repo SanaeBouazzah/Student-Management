@@ -10,19 +10,19 @@
   @method('PUT')
   <div class="form-group my-3 mx-5">
     <label for="name" class="mb-2">Name</label>
-    <input type="name" class="form-control" id="name" name="name" placeholder="Enter your name" value="{{$student->name}}">
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" value="{{$student->name}}">
   </div>
   <div class="form-group my-3 mx-5">
     <label for="address" class="mb-2">Address</label>
-    <input type="address" class="form-control" id="address" name="address" placeholder="Enter your address" value="{{$student->address}}">
+    <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address" value="{{$student->address}}">
   </div>
   <div class="form-group mx-5 my-3">
     <label for="mobile" class="mb-2">mobile</label>
-    <input type="mobile" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile" value="{{$student->mobile}}">
+    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile" value="{{$student->mobile}}">
   </div>
   <div class="form-group mx-5 my-3">
     <label for="image" class="mb-2">mobile</label>
-    <input type="mobile" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile" value="{{$student->mobile}}">
+    <input type="file" class="form-control" id="image" name="image">
   </div>
   <div class="mx-5 my-4">
     <input type="submit" class="btn btn-primary form-control " value="submit">
