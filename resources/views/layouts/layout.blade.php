@@ -27,7 +27,7 @@
           <div class="bg-dark min-vh-100 d-flex flex-column justify-content-between p-3">
              <ul class="nav nav-pills flex-column mt-4">
               <li class="nav-item py-2 py-sm-0 ">
-                <a href="{{route('home')}}" id="link" class="nav-link text-white">
+                <a href="{{route('home')}}" id="link" class="nav-link text-white active">
                   <i class="fs-5 fa fa-house"></i><span class="fs-4 ms-3 d-none d-sm-inline">Home</span>
                 </a>
               </li>
