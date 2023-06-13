@@ -10,7 +10,9 @@ use App\Models\Payment;
 
 class ReportController extends Controller
 {
-  $payment = Payment::find($pid);
-  $pdf = App::make('dompdf.wrapper');
-  $print = "<div>;"
+  public function report1($pid){
+    $payment = Payment::find($pid);
+    $pdf = App::make('dompdf.wrapper');
+    $print = "<div>;"
+  }
 }  

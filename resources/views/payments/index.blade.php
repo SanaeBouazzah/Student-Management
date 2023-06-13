@@ -43,6 +43,9 @@
                   </div>
               </form>
             </div>
+            <div class="m-2">
+              <a href="{{route('')}}" class="btn btn-dark">Print</a>
+            </div>
           </td>
         </tr>
     @endforeach
