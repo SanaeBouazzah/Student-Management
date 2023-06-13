@@ -16,11 +16,11 @@
     <input type="text" class="form-control" id="address" name="address" placeholder="Enter your address">
   </div>
   <div class="form-group mx-5 my-3">
-    <label for="mobile" class="mb-2">mobile</label>
+    <label for="mobile" class="mb-2">Mobile</label>
     <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile">
   </div>
   <div class="form-group mx-5 my-3">
-    <label for="image" class="mb-2">mobile</label>
+    <label for="image" class="mb-2">Upload Image</label>
     <input type="file" class="form-control" id="image" name="image">
   </div>
   <div class="mx-5 my-4">
