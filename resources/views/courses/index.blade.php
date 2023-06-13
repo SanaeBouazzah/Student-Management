@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('title')
-    Courses
+    | Courses
 @endsection
 @section('content')
 <h3>Course Application </h3>

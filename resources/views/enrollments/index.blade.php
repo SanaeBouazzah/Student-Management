@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('title')
-    Enrollments
+  | Enrollments
 @endsection
 @section('content')
 <h3>Enrollment Application </h3>

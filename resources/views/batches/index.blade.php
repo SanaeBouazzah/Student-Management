@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('title')
-    Batches
+  | Batches
 @endsection
 @section('content')
 <h3>Batch Application </h3>
