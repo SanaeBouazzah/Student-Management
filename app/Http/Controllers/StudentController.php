@@ -48,6 +48,7 @@ class StudentController extends Controller
         'mobile' => 'required',
         'image' => 'required|image|mimes:jpg, png, jpeg, svg',
       ]);
+      $data['image'] = $this->uploadImage($request);
       //insertion
       $student->fill($data)->save();
       return redirect()->route('students.index')->with('success', 'You updated student successfuly.');
