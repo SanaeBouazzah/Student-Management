@@ -27,7 +27,7 @@ class ReportController extends Controller
     $print .= "</tr>";
     $print .= "<tr>";
     $print .= "<td><h3>" . $payment->enrollment->batch->name . "</h3></td>";
-    $print .= "<td></td>";
+    $print .= "<td><h3>" . $payment->amount . "</h3></td>";
     $print .= "</tr>";
     $print .= "</table>";
     $print .= "<hr/>";
