@@ -4,6 +4,9 @@
 @endsection
 @section('content')
    <h2> {{$student->name}}</h2>
+   <div class="image">
+    <img src="{{$student->image}}" alt="">
+   </div>
    <div class="card">
     <h5 class="card-header">Profile</h5>
     <div class="card-body">
