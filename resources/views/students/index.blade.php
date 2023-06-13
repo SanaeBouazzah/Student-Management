@@ -6,7 +6,9 @@
 <h3>Student Application </h3>
 <div>
   @if (session()->has('success'))
-  {{  session('success')}}
+  <div class="alert alert-primary mt-2" role="alert">
+    {{  session('success')}}
+  </div>
 @endif
 </div>
 <a href="{{route('students.create')}}" class="btn btn-dark rounded-0 px-4 my-4">Add Student</a>
