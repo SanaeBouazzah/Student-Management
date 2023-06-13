@@ -4,11 +4,11 @@
 @endsection
 @section('content')
    <h2> {{$student->name}}</h2>
-  <div class="d-flex justify-content-between" style="width:60%;">
+  <div class="d-flex justify-content-between card" style="width:40%;">
     <div class="image">
       <img src="{{$student->image}}" alt="">
      </div>
-     <div class="card">
+     <div class="rep">
       <h5 class="card-header">Profile</h5>
       <div class="card-body">
         <h5 class="card-title">{{$student->name}}</h5>
