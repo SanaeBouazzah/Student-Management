@@ -13,6 +13,7 @@ class ReportController extends Controller
   public function report1($pid){
     $payment = Payment::find($pid);
     $pdf = App::make('dompdf.wrapper');
-    $print = "<div>;"
+    $print = "<div style='margin20px, padding:20px'>;"
+    $print .= "";
   }
 }  
