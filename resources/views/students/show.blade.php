@@ -4,7 +4,7 @@
 @endsection
 @section('content')
    <h2> {{$student->name}}</h2>
-  <div class="d-flex justify-content-between">
+  <div class="d-flex justify-content-between" style="width:60%;">
     <div class="image">
       <img src="{{$student->image}}" alt="">
      </div>
