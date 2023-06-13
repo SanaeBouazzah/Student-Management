@@ -23,8 +23,12 @@ class StudentController extends Controller
         $data = $request->validate([
           'name' => 'required',
           'address' => 'required',
-          'mobile' => 'required'
+          'mobile' => 'required',
+          'image' => 'required|image|mimes:jpg, png, jpeg, svg',
         ]);
+        if($request->hasFile('image')){
+          $data['image'] = $request->file('image')->store('images', 'public');
+        }
         //insertion
         Student::create($data);
         return redirect()->route('students.index')->with('success', 'You added student successfuly.');

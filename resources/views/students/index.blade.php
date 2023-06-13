@@ -25,7 +25,8 @@
     @foreach ($students as $student)
         <tr>
           <td>{{$student->id}}</td>
-          <td><img src="{{$student->image}}" alt=""></td>
+          <td><img class="rounded-circle" src="{{asset('storage/'. $student->image)}}" 
+            alt="" width="50px" height="50px" style="object-fit: cover"></td>
           <td>{{$student->name}}</td>
           <td>{{$student->address}}</td>
           <td>{{$student->mobile}}</td>
