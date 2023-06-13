@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('title')
-    Home
+    Payments
 @endsection
 @section('content')
 <h3>Payment Application </h3>
