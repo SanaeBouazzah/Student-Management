@@ -25,6 +25,7 @@
     @foreach ($students as $student)
         <tr>
           <td>{{$student->id}}</td>
+          <td>{{$student->image}}</td>
           <td>{{$student->name}}</td>
           <td>{{$student->address}}</td>
           <td>{{$student->mobile}}</td>
