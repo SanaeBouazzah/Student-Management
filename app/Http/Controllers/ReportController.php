@@ -17,19 +17,20 @@ class ReportController extends Controller
     $print .= "<hr/>";
     $print .= "<p>Receipt No: <b>" . $pid . "</b> </p>";
 
+    $print .= "<table>";
+
     $print .= "<tr>";
-    $print .= "<td></td>";
-    $print .= "<td></td>";
+    $print .= "<td>Batch</td>";
+    $print .= "<td>Amount</td>";
     $print .= "</tr>";
-    $print .= "<tr>";
-    $print .= "<td></td>";
-    $print .= "<td></td>";
-    $print .= "</tr>";
+
     $print .= "<tr>";
     $print .= "<td><h3>" . $payment->enrollment->batch->name . "</h3></td>";
     $print .= "<td><h3>" . $payment->amount . "</h3></td>";
     $print .= "</tr>";
+
     $print .= "</table>";
+    
     $print .= "<hr/>";
     $print .= "<span>Printed Date : <b>" . date('Y-m-d') . "</b></span>";
     $print .= "</div>";
