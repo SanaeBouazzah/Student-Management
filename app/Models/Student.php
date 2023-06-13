@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
+  protected $dates = ['created_at'];
   protected $table = 'students';
   protected $primarykey = 'id';
   protected $fillable = [
