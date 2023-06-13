@@ -6,12 +6,12 @@
 <h3>Student Application </h3>
 <div>
   @if (session()->has('success'))
-  <div class="alert alert-primary mt-2" role="alert">
+  <div class="alert alert-primary" role="alert">
     {{  session('success')}}
   </div>
 @endif
 </div>
-<a href="{{route('students.create')}}" class="btn btn-dark rounded-0 px-4 my-3">Add Student</a>
+<a href="{{route('students.create')}}" class="btn btn-dark rounded-0 px-4 my-1">Add Student</a>
 <table class="table table-striped">
   <thead>
     <tr>

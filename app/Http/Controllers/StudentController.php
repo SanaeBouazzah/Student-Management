@@ -24,7 +24,7 @@ class StudentController extends Controller
           'name' => 'required',
           'address' => 'required',
           'mobile' => 'required',
-          'image' => 'required|image|mimes:jpg, png, jpeg, svg',
+          'image' => 'required|image|mimes:jpg, png, jpeg, svg, jfif',
         ]);
          $data['image'] = $this->uploadImage($request);
         //insertion
@@ -46,7 +46,7 @@ class StudentController extends Controller
         'name' => 'required',
         'address' => 'required',
         'mobile' => 'required',
-        'image' => 'required|image|mimes:jpg, png, jpeg, svg',
+        'image' => 'required|image|mimes:jpg, png, jpeg, svg, jfif',
       ]);
       $data['image'] = $this->uploadImage($request);
       //insertion
