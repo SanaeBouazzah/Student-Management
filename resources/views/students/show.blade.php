@@ -4,9 +4,10 @@
 @endsection
 @section('content')
    <h2> {{$student->name}}</h2>
-  <div class="d-flex justify-content-start card" style="width:40%;">
+  <div class="d-flex justify-content-start " style="width:60%;">
     <div class="image">
-      <img src="{{asset('storage/' . $student->image)}}" alt="">
+      <img src="{{asset('storage/' . $student->image)}}" alt="" 
+      style="object-fit:cover" width="140px" height="140px">
     </div>
      <div class="rep">
       <h5 class="card-header">Profile</h5>
