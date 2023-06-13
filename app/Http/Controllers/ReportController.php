@@ -16,6 +16,7 @@ class ReportController extends Controller
     $print .= "<h1>Payment Receipt</h1>";
     $print .= "<hr/>";
     $print .= "<p>Receipt No: <b>" . $pid . "</b> </p>";
+    $print .= "<p>Date: <b>" . $payment->paid_date . "</b> </p>";
 
     $print .= "<table>";
 
@@ -30,7 +31,7 @@ class ReportController extends Controller
     $print .= "</tr>";
 
     $print .= "</table>";
-    
+
     $print .= "<hr/>";
     $print .= "<span>Printed Date : <b>" . date('Y-m-d') . "</b></span>";
     $print .= "</div>";
