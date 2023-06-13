@@ -44,7 +44,7 @@
               </form>
             </div>
             <div class="m-2">
-              <a href="{{route('report/report1' . $payment->id)}}" class="btn btn-dark">Print</a>
+              <a href="{{url('/report/report1/' . $payment->id)}}" class="btn btn-dark">Print</a>
             </div>
           </td>
         </tr>
