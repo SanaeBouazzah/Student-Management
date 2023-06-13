@@ -58,7 +58,7 @@ class StudentController extends Controller
     }
     public function uploadImage(Request $request){
       if($request->hasFile('image')){
-        $data['image'] = $request->file('image')->store('images', 'public');
+        return $request->file('image')->store('images', 'public');
       }
     }
 }
