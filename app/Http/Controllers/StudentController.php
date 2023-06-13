@@ -45,7 +45,8 @@ class StudentController extends Controller
        $data = $request->validate([
         'name' => 'required',
         'address' => 'required',
-        'mobile' => 'required'
+        'mobile' => 'required',
+        'image' => 'required|image|mimes:jpg, png, jpeg, svg',
       ]);
       //insertion
       $student->fill($data)->save();
