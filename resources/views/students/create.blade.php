@@ -21,7 +21,7 @@
   </div>
   <div class="form-group mx-5 my-3">
     <label for="image" class="mb-2">mobile</label>
-    <input type="file" class="form-control" id="mobile" name="mobile" placeholder="Enter your mobile">
+    <input type="file" class="form-control" id="image" name="image">
   </div>
   <div class="mx-5 my-4">
     <input type="submit" class="btn btn-primary form-control " value="submit">
