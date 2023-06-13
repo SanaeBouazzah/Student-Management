@@ -19,6 +19,7 @@ class ReportController extends Controller
     $print .= "<p>Date: <b>" . $payment->paid_date . "</b> </p>";
     $print .= "<p>Enrollment No: <b>" . $payment->enrollment->enroll_no . "</b> </p>";
     $print .= "<p>Student Name: <b>" . $payment->enrollment->student->name . "</b> </p>";
+    $print .= "<hr/>";
 
     $print .= "<table>";
 
@@ -28,7 +29,7 @@ class ReportController extends Controller
     $print .= "</tr>";
 
     $print .= "<tr>";
-    $print .= "<td><h3>" . $payment->enrollment->batch->name . "</h3></td>";
+    $print .= "<td><h3>" . $payment->enrollment->batch->name . ":</h3></td>";
     $print .= "<td><h3>" . $payment->amount . "</h3></td>";
     $print .= "</tr>";
 
