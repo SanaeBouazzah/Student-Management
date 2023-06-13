@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('title')
-    Show
+    | Teacher
 @endsection
 @section('content')
    <div class="row">
